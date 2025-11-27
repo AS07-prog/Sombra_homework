@@ -3,13 +3,21 @@
 const Body = () => {
   return (
     <main style={styles.body}>
+      {/* 1. КАРТКА JOHN DOE (існуюча) */}
       <div style={styles.card}>
         <img src={"/avatar-default.png"} alt="John Doe" style={styles.photo} />
         <div style={styles.textContainer}>
           <h2 style={styles.name}>John Doe</h2>
           <p style={styles.position}>Software engineer</p>
         </div>
-      </div>
+          </div>
+          <div style={styles.card}>
+              <img src={"/Syvous_A.jpg"} alt="Artem Syvous" style={styles.photo} />
+              <div style={styles.textContainer}>
+                  <h2 style={styles.name}>Artem Syvous</h2>
+                  <p style={styles.position}>Software engineer</p>
+              </div>
+          </div>
 
             <div style={styles.card}>
                 <img src={"/anastasiia_syvvyk.png"} alt="Сивик Анастасія" style={styles.photo} />
@@ -18,8 +26,21 @@ const Body = () => {
                     <p style={styles.position}>Project manager</p>
                 </div>
             </div>
-        </main>
-    );
+      {/* 2. КАРТКА ВАШЕ ІМ'Я (додана) */}
+      <div style={styles.card}>
+        {/*
+          УВАГА: Замініть my-photo.png на назву вашого файлу
+          та переконайтеся, що файл розміщено у папці public.
+        */}
+        <img src={"/fel.png"} alt="Фель Богдан" style={styles.photo} />
+        <div style={styles.textContainer}>
+          <h2 style={styles.name}>Фель Богдан</h2>
+          <p style={styles.position}>Junior Developer</p>
+        </div>
+      </div>
+      
+    </main>
+  );
 };
 
 const styles = {
