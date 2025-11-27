@@ -3,13 +3,36 @@ import React from "react";
 const Body = () => {
   return (
     <main style={styles.body}>
+      {/* 1. КАРТКА JOHN DOE (існуюча) */}
       <div style={styles.card}>
         <img src={"/photo_Serhii.png"} alt="Яворницький Сергій" style={styles.photo} />
         <div style={styles.textContainer}>
           <h2 style={styles.name}>Яворницький Сергій</h2>
           <p style={styles.position}>Junior Developer</p>
         </div>
+          </div>
+          <div style={styles.card}>
+              <img src={"/Syvous_A.jpg"} alt="Artem Syvous" style={styles.photo} />
+              <div style={styles.textContainer}>
+                  <h2 style={styles.name}>Artem Syvous</h2>
+                  <p style={styles.position}>Software engineer</p>
+              </div>
+          </div>
       </div>
+
+      {/* 2. КАРТКА ВАШЕ ІМ'Я (додана) */}
+      <div style={styles.card}>
+        {/*
+          УВАГА: Замініть my-photo.png на назву вашого файлу
+          та переконайтеся, що файл розміщено у папці public.
+        */}
+        <img src={"/fel.png"} alt="Фель Богдан" style={styles.photo} />
+        <div style={styles.textContainer}>
+          <h2 style={styles.name}>Фель Богдан</h2>
+          <p style={styles.position}>Junior Developer</p>
+        </div>
+      </div>
+      
     </main>
   );
 };
