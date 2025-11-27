@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 const Body = () => {
   return (
@@ -11,7 +11,18 @@ const Body = () => {
         </div>
       </div>
     </main>
-  );
+    );
+    return (
+        <main style={styles.body}>
+            <div style={styles.card}>
+                <img src={"/anastasiia_syvvyk.png"} alt="Сивик Анастасія" style={styles.photo} />
+                <div style={styles.textContainer}>
+                    <h2 style={styles.name}>Сивик Анастасія</h2>
+                    <p style={styles.position}>Project manager</p>
+                </div>
+            </div>
+        </main>
+    );
 };
 
 const styles = {
