@@ -12,7 +12,7 @@ const Body = () => {
         </div>
           </div>
           <div style={styles.card}>
-              <img src={"/Syvous_A.jpg"} alt="Artem Syvous" style={styles.photo} />
+              <img src={"/Syvous_A.jpg"} alt="Artem SYVOUS" style={styles.photo} />
               <div style={styles.textContainer}>
                   <h2 style={styles.name}>Artem Syvous</h2>
                   <p style={styles.position}>Software engineer</p>
